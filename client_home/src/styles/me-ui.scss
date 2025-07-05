@@ -1,0 +1,243 @@
+$main-color: #0079fe;
+// $base-color: #fa436a;
+
+/* 文字基本颜色 */
+$uni-text-color: #333; //基本色
+$uni-text-color-inverse: #fff; //反色
+$uni-text-color-grey: #999; //辅助灰色，如加载更多的提示信息
+$uni-text-color-placeholder: #808080;
+$uni-text-color-disable: #c0c0c0;
+
+/* 背景颜色 */
+$uni-bg-color: #ffffff;
+$uni-bg-color-grey: #f8f8f8;
+$uni-bg-color-hover: #f1f1f1; //点击状态颜色
+$uni-bg-color-mask: rgba(0, 0, 0, 0.4); //遮罩颜色
+
+/* 边框颜色 */
+$uni-border-color: #e5e5e5;
+
+/* 尺寸变量 */
+
+/* 文字尺寸 */
+$uni-font-size-sm: 12px;
+$uni-font-size-base: 14px;
+$uni-font-size-lg: 16px;
+
+/* 图片尺寸 */
+$uni-img-size-sm: 20px;
+$uni-img-size-base: 26px;
+$uni-img-size-lg: 40px;
+
+/* Border Radius */
+$uni-border-radius-sm: 2px;
+$uni-border-radius-base: 3px;
+$uni-border-radius-lg: 6px;
+$uni-border-radius-circle: 50%;
+
+/* 水平间距 */
+$uni-spacing-row-sm: 5px;
+$uni-spacing-row-base: 10px;
+$uni-spacing-row-lg: 15px;
+
+/* 垂直间距 */
+$uni-spacing-col-sm: 4px;
+$uni-spacing-col-base: 8px;
+$uni-spacing-col-lg: 12px;
+
+/* 透明度 */
+$uni-opacity-disabled: 0.3; // 组件禁用态的透明度
+
+/* 文章场景相关 */
+$uni-color-title: #2c405a; // 文章标题颜色
+$uni-font-size-title: 20px;
+$uni-color-subtitle: #555555; // 二级标题颜色
+$uni-font-size-subtitle: 26px;
+$uni-color-paragraph: #3f536e; // 文章段落颜色
+$uni-font-size-paragraph: 15px;
+
+/* 页面左右间距 */
+$page-row-spacing: 30upx;
+$page-color-base: #f8f8f8;
+$page-color-light: #f8f6fc;
+
+/* 文字尺寸 */
+$font-sm: 24upx;
+$font-base: 28upx;
+$font-lg: 32upx;
+/*文字颜色*/
+$font-color-dark: #303133;
+$font-color-base: #606266;
+$font-color-light: #909399;
+$font-color-disabled: #c0c4cc;
+$font-color-spec: #4399fc;
+$font-color-white: #ffffff;
+
+/* 边框颜色 */
+$border-color-dark: #dcdfe6;
+$border-color-base: #e4e7ed;
+$border-color-light: #ebeef5;
+/* 图片加载中颜色 */
+$image-bg-color: #eee;
+
+/* 行为相关颜色 */
+$uni-color-success: #0bcf08;
+$uni-color-warning: #f0ad4e;
+$uni-color-error: #dd524d;
+
+/* === 颜色变量 === */
+
+/* 基本色 */
+$color_red: #ff0036;
+$color_orange: #fca216;
+$color_yellow: #fcca16;
+$color_green: #0bcf08;
+$color_cyan: #26d2ff;
+$color_blue: #38f;
+$color_purple: #7f39e8;
+
+$color_black: #373737;
+$color_white: #fff;
+$color_grey: #6a737d;
+$color_light: #f9f9f9;
+$color_dark: #666;
+
+/* 主题色 */
+$color_error: #ff0036;
+$color_error_b: #d10000;
+$color_error_h: #ff3237;
+$color_warning: #fca216;
+$color_warning_b: #ff8200;
+$color_warning_h: #fca248;
+$color_success: #09bb07;
+$color_success_b: #2f9833;
+$color_success_h: #3bbb39;
+$color_info: #26d2ff;
+$color_info_b: #15baf8;
+$color_info_h: #58e6ff;
+$color_primary: #22b8b8;
+$color_primary_b: #fcca16;
+$color_primary_h: #51a6ff;
+$color_default: #666;
+$color_default_b: #444;
+$color_default_h: #999;
+
+/* 场景色 */
+$color_base: #373737;
+$color_title: #000;
+$color_subtitle: #373737;
+$color_describe: #666;
+$color_paragraph: #666;
+$color_tip: #6a737d;
+$color_border: #dfe2e5;
+$color_mask: rgba(0, 0, 0, 0.4);
+$color_shadow: rgba(7, 17, 27, 0.1);
+
+$bg_black: #24292e;
+$bg_grey: #efeff4;
+$bg_white: #fdfdfd;
+$bg_brown: #e5ddcc;
+
+/* === 其他 === */
+
+/* 透明度 */
+$opacity_disabled: 0.7;
+
+/* === 尺寸 === */
+
+/* 常用大小 */
+$font_mini: 24rpx;
+$font_small: 28rpx;
+$font_base: 32rpx;
+$font_big: 40rpx;
+$font_larger: 48rpx;
+$font_huge: 56rpx;
+
+/* 场景大小 */
+$font_title: 40rpx;
+$font_subtitle: 32rpx;
+$font_describe: 32rpx;
+$font_paragraph: 32rpx;
+$font_tip: 24rpx;
+
+/* 图片尺寸 */
+$img_size_mini: 48rpx;
+$img_size_small: 64rpx;
+$img_size_base: 96rpx;
+$img_size_big: 144rpx;
+$img_size_larger: 192rpx;
+$img_size_huge: 256rpx;
+
+/* 圆角 */
+$radius_small: 8rpx;
+$radius_base: 16rpx;
+$radius_big: 32rpx;
+$radius_circle: 50%;
+
+/* 高度 */
+$height_mini: 32rpx;
+$height_small: 48rpx;
+$height_base: 64rpx;
+$height_big: 80rpx;
+$height_larger: 96rpx;
+
+/* === 间隔 === */
+
+/* 水平间距 */
+$row_mini: 8rpx;
+$row_small: 16rpx;
+$row_base: 32rpx;
+$row_big: 40rpx;
+$row_larger: 48rpx;
+
+/* 垂直间距 */
+$col_mini: 8rpx;
+$col_small: 16rpx;
+$col_base: 32rpx;
+$col_big: 40rpx;
+$col_larger: 48rpx;
+
+/* 填充 */
+$padding_mini: 16rpx;
+$padding_small: 24rpx;
+$padding_base: 16rpx;
+$padding_big: 40rpx;
+$padding_larger: 48rpx;
+$padding_huge: 64rpx;
+
+/* 边距 */
+$margin_mini: 8rpx;
+$margin_small: 16rpx;
+$margin_base: 32rpx;
+$margin_big: 40rpx;
+$margin_larger: 48rpx;
+$margin_huge: 64rpx;
+
+//按钮
+
+.me-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 30upx;
+  font-size: 28upx;
+  height: 64upx;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  overflow: visible;
+  margin-left: initial;
+  transform: translate(0upx, 0upx);
+  margin-right: initial;
+  background-color: $main-color;
+  color: $font-color-white;
+  border-radius: $uni-border-radius-sm;
+
+  &::after {
+    display: none;
+  }
+  &.button-hover {
+    transform: translate(1upx, 1upx);
+  }
+}

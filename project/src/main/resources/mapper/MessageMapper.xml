@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project.demo.dao.MessageMapper">
+
+    <resultMap type="com.project.demo.entity.Message" id="MessageResult">
+        <result property="messageId"    column="message_id"    />
+        <result property="userId"    column="user_id"    />
+        <result property="title"    column="title"    />
+        <result property="content"    column="content"    />
+        <result property="nickname"    column="nickname"    />
+        <result property="avatar"    column="avatar"    />
+        <result property="email"    column="email"    />
+        <result property="phone"    column="phone"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateTime"    column="update_time"    />
+        <result property="replyId"    column="reply_id"    />
+    </resultMap>
+
+    <sql id="selectMessageVo">
+        select message_id, user_id, title, content, nickname, avatar, email, phone, create_time, update_time, reply_id from message
+    </sql>
+
+    <select id="selectMessageList" parameterType="com.project.demo.entity.Message" resultMap="MessageResult">
+        <include refid="selectMessageVo"/>
+        <where>
+            <if test="userId != null "> and user_id = #{userId}</if>
+            <if test="title != null  and title != ''"> and title = #{title}</if>
+            <if test="content != null  and content != ''"> and content = #{content}</if>
+            <if test="nickname != null  and nickname != ''"> and nickname like concat('%', #{nickname}, '%')</if>
+            <if test="avatar != null  and avatar != ''"> and avatar = #{avatar}</if>
+            <if test="email != null  and email != ''"> and email = #{email}</if>
+            <if test="phone != null  and phone != ''"> and phone = #{phone}</if>
+            <if test="replyId != null "> and reply_id = #{replyId}</if>
+        </where>
+    </select>
+
+    <select id="selectMessageById" parameterType="Integer" resultMap="MessageResult">
+        <include refid="selectMessageVo"/>
+        where message_id = #{messageId}
+    </select>
+
+    <insert id="insertMessage" parameterType="com.project.demo.entity.Message" useGeneratedKeys="true" keyProperty="messageId">
+        insert into message
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId != null ">user_id,</if>
+            <if test="title != null  and title != ''">title,</if>
+            <if test="content != null  and content != ''">content,</if>
+            <if test="nickname != null  and nickname != ''">nickname,</if>
+            <if test="avatar != null  and avatar != ''">avatar,</if>
+            <if test="email != null  and email != ''">email,</if>
+            <if test="phone != null  and phone != ''">phone,</if>
+            <if test="createTime != null ">create_time,</if>
+            <if test="updateTime != null ">update_time,</if>
+            <if test="replyId != null ">reply_id,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="userId != null ">#{userId},</if>
+            <if test="title != null  and title != ''">#{title},</if>
+            <if test="content != null  and content != ''">#{content},</if>
+            <if test="nickname != null  and nickname != ''">#{nickname},</if>
+            <if test="avatar != null  and avatar != ''">#{avatar},</if>
+            <if test="email != null  and email != ''">#{email},</if>
+            <if test="phone != null  and phone != ''">#{phone},</if>
+            <if test="createTime != null ">#{createTime},</if>
+            <if test="updateTime != null ">#{updateTime},</if>
+            <if test="replyId != null ">#{replyId},</if>
+         </trim>
+    </insert>
+
+    <update id="updateMessage" parameterType="com.project.demo.entity.Message">
+        update message
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="userId != null ">user_id = #{userId},</if>
+            <if test="title != null  and title != ''">title = #{title},</if>
+            <if test="content != null  and content != ''">content = #{content},</if>
+            <if test="nickname != null  and nickname != ''">nickname = #{nickname},</if>
+            <if test="avatar != null  and avatar != ''">avatar = #{avatar},</if>
+            <if test="email != null  and email != ''">email = #{email},</if>
+            <if test="phone != null  and phone != ''">phone = #{phone},</if>
+            <if test="createTime != null ">create_time = #{createTime},</if>
+            <if test="updateTime != null ">update_time = #{updateTime},</if>
+            <if test="replyId != null ">reply_id = #{replyId},</if>
+        </trim>
+        where message_id = #{messageId}
+    </update>
+
+    <delete id="deleteMessageById" parameterType="Integer">
+        delete from message where message_id = #{messageId}
+    </delete>
+
+    <delete id="deleteMessageByIds" parameterType="String">
+        delete from message where message_id in
+        <foreach item="messageId" collection="array" open="(" separator="," close=")">
+            #{messageId}
+        </foreach>
+    </delete>
+
+</mapper>

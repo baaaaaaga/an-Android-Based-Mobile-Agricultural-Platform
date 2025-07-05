@@ -1,0 +1,537 @@
+{
+  "pages": [
+    {
+      "name": "首页",
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "enablePullDownRefresh": false
+      },
+      "meta": {
+        "noAuth": true
+      }
+    },
+    {
+      "name": "搜索",
+      "path": "pages/search/index",
+      "style": {
+        "navigationBarTitleText": "搜索",
+        "enablePullDownRefresh": false
+      },
+      "meta": {
+        "noAuth": true
+      }
+    },
+    {
+      "path": "pages/webview/webview",
+      "style": {
+        "navigationBarTitleText": "网址跳转"
+      },
+      "meta": {
+        "noAuth": true
+      }
+    },
+
+    {
+      "path": "pages/media/music",
+      "style": {
+        "navigationBarTitleText": "音乐",
+        "backgroundColor": "#000000"
+      }
+    },
+    {
+      "path": "pages/media/image",
+      "style": {
+        "navigationBarTitleText": "图片预览",
+        "backgroundColor": "#000000"
+      }
+    },
+    {
+      "path": "pages/media/video",
+      "style": {
+        "navigationBarTitleText": "视频",
+        "backgroundColor": "#000000"
+      }
+    },
+    {
+      "path": "pages/user/comment",
+      "style": {
+        "navigationBarTitleText": "我的评论"
+      }
+    },
+    {
+      "path": "pages/article/list",
+      "style": {
+        "navigationBarTitleText": "农业知识"
+      }
+    },
+    {
+      "path": "pages/article/index",
+      "style": {
+        "navigationBarTitleText": "农业知识"
+      },
+      "meta": {
+        "noAuth": true
+      }
+    },
+    {
+      "path": "pages/article/details",
+      "style": {
+        "navigationBarTitleText": "农业知识详情"
+      }
+    },
+    {
+      "path": "pages/forum/index",
+      "style": {
+        "navigationBarTitleText": "交流论坛"
+      },
+      "meta": {
+        "noAuth": true
+      }
+    },
+    {
+      "path": "pages/cart/index",
+      "style": {
+        "navigationBarTitleText": "购物车"
+      }
+    },
+    {
+      "path": "pages/cart/list",
+      "style": {
+        "navigationBarTitleText": "购物车"
+      }
+    },
+    {
+      "path": "pages/pay/index",
+      "style": {
+        "navigationBarTitleText": "支付"
+      }
+    },
+      {
+      "path": "pages/logistics_delivery/table",
+      "style": {
+        "navigationBarTitleText": "订单配送列表"
+      }
+    },
+    {
+      "path": "pages/logistics_delivery/view",
+      "style": {
+        "navigationBarTitleText": "订单配送详情"
+      }
+    },
+    {
+      "path": "pages/user/address",
+      "style": {
+        "navigationBarTitleText": "收货地址"
+      }
+    },
+    {
+      "path": "pages/user/address_edit",
+      "style": {
+        "navigationBarTitleText": "收货地址管理"
+      }
+    },
+        {
+      "path": "pages/user/coupon",
+      "style": {
+        "navigationBarTitleText": "我的优惠券",
+        "enablePullDownRefresh": false
+      }
+    },
+      {
+      "path": "pages/user/collect",
+      "style": {
+        "navigationBarTitleText": "我的收藏"
+      }
+    },
+    {
+      "path": "pages/user/index",
+      "style": {
+        "navigationBarTitleText": "我的"
+      },
+      "meta": {
+        "noAuth": true
+      }
+    },
+    {
+      "path": "pages/user/password",
+      "style": {
+        "navigationBarTitleText": "修改密码"
+      }
+    },
+    {
+      "path": "pages/user/info",
+      "style": {
+        "navigationBarTitleText": "基本信息"
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "pagesA",
+      "pages": [
+        {
+          "path": "forum/list",
+          "style": {
+            "navigationBarTitleText": "交流论坛列表"
+          }
+        },
+        {
+          "path": "forum/details",
+          "style": {
+            "navigationBarTitleText": "交流论坛详情"
+          }
+        },
+        {
+          "path": "forum/view",
+          "style": {
+            "navigationBarTitleText": "发布内容"
+          }
+        },
+        {
+          "path": "forum/table",
+          "style": {
+            "navigationBarTitleText": "交流论坛管理"
+          }
+        },
+        {
+          "path": "forum/edit",
+          "style": {
+            "navigationBarTitleText": "交流论坛详情"
+          }
+        },
+        {
+          "path": "forum/add",
+          "style": {
+            "navigationBarTitleText": "交流论坛添加"
+          }
+        },
+        {
+          "path": "goods/list",
+          "style": {
+            "navigationBarTitleText": "产品展示"
+          }
+        },
+        {
+          "path": "goods/details",
+          "style": {
+            "navigationBarTitleText": "产品详情"
+          }
+        },
+        {
+          "path": "order/list",
+          "style": {
+            "navigationBarTitleText": "我的订单"
+          }
+        },
+        {
+          "path": "order/details",
+          "style": {
+            "navigationBarTitleText": "订单详情"
+          }
+        },
+          {
+          "path": "goods/coupon",
+          "style": {
+            "navigationBarTitleText": "领取优惠券",
+            "enablePullDownRefresh": false
+          }
+        },
+          {
+          "path": "user_center/index",
+          "style": {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false
+          }
+        }
+      ]
+    },
+    {
+      "root": "pagesB",
+      "pages": [
+        {
+          "path": "message/list",
+          "style": {
+            "navigationBarTitleText": "留言投诉列表"
+          }
+        },
+        {
+          "path": "message/edit",
+          "style": {
+            "navigationBarTitleText": "留言投诉"
+          }
+        },
+        {
+          "path": "message/table",
+          "style": {
+            "navigationBarTitleText": "留言投诉管理"
+          }
+        },
+        {
+          "path": "message/view",
+          "style": {
+            "navigationBarTitleText": "留言投诉详情"
+          }
+        },
+        {
+          "path": "comment/table",
+          "style": {
+            "navigationBarTitleText": "评论管理"
+          }
+        },
+        {
+          "path": "comment/edit",
+          "style": {
+            "navigationBarTitleText": "评论"
+          }
+        },
+        {
+          "path": "comment/view",
+          "style": {
+            "navigationBarTitleText": "查看评论"
+          }
+        },
+        {
+          "path": "account/register",
+          "style": {
+            "navigationBarTitleText": "注册"
+          },
+          "meta": {
+            "noAuth": true
+          }
+        },
+        {
+          "name": "登录",
+          "path": "account/login",
+          "style": {
+            "navigationBarTitleText": "登录",
+            "enablePullDownRefresh": false
+          },
+          "meta": {
+            "noAuth": true
+          }
+        },
+        {
+          "path": "account/forgot",
+          "style": {
+            "navigationBarTitleText": "找回密码"
+          },
+          "meta": {
+            "noAuth": true
+          }
+        }
+      ]
+    },
+    {
+      "root": "pagesC",
+      "pages": [
+                            // 农产品列表路由
+        {
+          "path": "agricultural_products/list",
+          "style": {
+            "navigationBarTitleText": "农产品列表"
+          }
+        },
+            // 农产品详情路由
+        {
+          "path": "agricultural_products/details",
+          "style": {
+            "navigationBarTitleText": "农产品"
+          }
+        },
+                // 产地展示列表路由
+        {
+          "path": "origin_display/list",
+          "style": {
+            "navigationBarTitleText": "产地展示列表"
+          }
+        },
+            // 产地展示详情路由
+        {
+          "path": "origin_display/details",
+          "style": {
+            "navigationBarTitleText": "产地展示"
+          }
+        },
+                      // 互动咨询编辑路由
+        {
+          "path": "interactive_consultation/edit",
+          "style": {
+            "navigationBarTitleText": "互动咨询"
+          }
+        },
+                                                      // 农户商家列表路由
+        {
+            "path": "farmers_merchants/table",
+            "style": {
+              "navigationBarTitleText": "农户商家列表"
+            }
+        },
+        // 农户商家编辑路由
+        {
+            "path": "farmers_merchants/view",
+            "style": {
+              "navigationBarTitleText": "农户商家详情"
+            }
+        },
+                    // 消费者列表路由
+        {
+            "path": "consumer/table",
+            "style": {
+              "navigationBarTitleText": "消费者列表"
+            }
+        },
+        // 消费者编辑路由
+        {
+            "path": "consumer/view",
+            "style": {
+              "navigationBarTitleText": "消费者详情"
+            }
+        },
+                      // 产地展示列表路由
+        {
+            "path": "origin_display/table",
+            "style": {
+              "navigationBarTitleText": "产地展示列表"
+            }
+        },
+        // 产地展示编辑路由
+        {
+            "path": "origin_display/view",
+            "style": {
+              "navigationBarTitleText": "产地展示详情"
+            }
+        },
+                    // 产地类型列表路由
+        {
+            "path": "type_of_place_of_origin/table",
+            "style": {
+              "navigationBarTitleText": "产地类型列表"
+            }
+        },
+        // 产地类型编辑路由
+        {
+            "path": "type_of_place_of_origin/view",
+            "style": {
+              "navigationBarTitleText": "产地类型详情"
+            }
+        },
+                    // 互动咨询列表路由
+        {
+            "path": "interactive_consultation/table",
+            "style": {
+              "navigationBarTitleText": "互动咨询列表"
+            }
+        },
+        // 互动咨询编辑路由
+        {
+            "path": "interactive_consultation/view",
+            "style": {
+              "navigationBarTitleText": "互动咨询详情"
+            }
+        },
+                    // 咨询回复列表路由
+        {
+            "path": "consultation_reply/table",
+            "style": {
+              "navigationBarTitleText": "咨询回复列表"
+            }
+        },
+        // 咨询回复编辑路由
+        {
+            "path": "consultation_reply/view",
+            "style": {
+              "navigationBarTitleText": "咨询回复详情"
+            }
+        },
+                    // 生产计划列表路由
+        {
+            "path": "production_planning/table",
+            "style": {
+              "navigationBarTitleText": "生产计划列表"
+            }
+        },
+        // 生产计划编辑路由
+        {
+            "path": "production_planning/view",
+            "style": {
+              "navigationBarTitleText": "生产计划详情"
+            }
+        },
+                    // 经验分享列表路由
+        {
+            "path": "experience_sharing/table",
+            "style": {
+              "navigationBarTitleText": "经验分享列表"
+            }
+        },
+        // 经验分享编辑路由
+        {
+            "path": "experience_sharing/view",
+            "style": {
+              "navigationBarTitleText": "经验分享详情"
+            }
+        },
+                    // 分享类型列表路由
+        {
+          "path": "share_type/table",
+          "style": {
+            "navigationBarTitleText": "分享类型列表"
+          }
+        },
+        // 分享类型编辑路由
+        {
+          "path": "share_type/view",
+          "style": {
+            "navigationBarTitleText": "分享类型详情"
+          }
+        }
+            ]
+    }
+  ],
+  "globalStyle": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uniapp-ma-template",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#F8F8F8",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#3388FF",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": ""
+      },
+      {
+        "pagePath": "pages/cart/index",
+        "text": ""
+      },
+      {
+        "pagePath": "pages/forum/index",
+        "text": ""
+      },
+      {
+        "pagePath": "pages/article/index",
+        "text": ""
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": ""
+      }
+    ]
+  },
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "tui-(.*)": "@/components/thorui/tui-$1/tui-$1.vue",
+      "^tn-(.*)": "@/tuniao-ui/components/tn-$1/tn-$1.vue",
+      "^c-(.*)": "@/custom-ui/c-$1/c-$1.vue",
+      "^u-(.*)": "@dcloudio/uniui/lib/u-$1/u-$1.vue"
+    }
+  }
+}

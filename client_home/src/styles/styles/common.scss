@@ -1,0 +1,417 @@
+.page-list {
+  padding: 40rpx;
+  .search-wrap {
+    width: 100%;
+    .search-btn-wrap {
+      display: flex;
+      justify-content: flex-end;
+      .btn-search {
+        margin-left: 20rpx;
+      }
+      .btn-reset {
+        margin-left: 20rpx;
+        background-color: $color_green;
+      }
+    }
+  }
+  .toolbar {
+    display: flex;
+    margin: 20rpx 0;
+    .btn-add {
+      margin-right: 20rpx;
+    }
+  }
+  .list-wrap {
+    display: flex;
+    flex-direction: column;
+    .list-item {
+      padding: 20rpx;
+      margin-bottom: 40rpx;
+      border-radius: 4rpx;
+      border: 1px solid $border-color-light;
+      background-color: $tn-bg-color;
+      .item-row {
+        display: flex;
+        margin-bottom: 10rpx;
+        .label {
+          width: 120rpx;
+        }
+        .value {
+          color: $tn-content-color;
+          image {
+            width: 260rpx;
+            height: 260rpx;
+          }
+        }
+      }
+      .operate-bar {
+        display: flex;
+        .btn-info {
+          margin-right: 20rpx;
+        }
+        .btn-delete {
+          margin-right: 20rpx;
+          background-color: $tn-color-red;
+        }
+        .btn-sign {
+          background-color: $color_green;
+        }
+        .btn-pay {
+          background-color: $color_green;
+        }
+      }
+    }
+  }
+
+  .list-wrap-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    .list-item {
+      width: calc(50% - 10rpx);
+      padding: 20rpx;
+      margin-right: 10rpx;
+      margin-bottom: 40rpx;
+      border-radius: 4rpx;
+      border: 1px solid $border-color-light;
+      background-color: $tn-bg-color;
+      &:nth-child(2n) {
+        margin-left: 10rpx;
+        margin-right: 0;
+      }
+      .item-row {
+        display: flex;
+        margin-bottom: 10rpx;
+        .label {
+          width: 120rpx;
+        }
+        .value {
+          color: $tn-content-color;
+          image {
+            width: 260rpx;
+            height: 260rpx;
+          }
+        }
+        .icon {
+          margin-right: 10rpx;
+        }
+      }
+      .content {
+        display: flex;
+        justify-content: space-between;
+      }
+      .operate-bar {
+        display: flex;
+        flex-direction: column;
+        .btn-info {
+          width: 100%;
+          margin-bottom: 20rpx;
+        }
+        .btn-delete {
+          width: 100%;
+          margin-bottom: 20rpx;
+          background-color: $tn-color-red;
+        }
+        .btn-sign {
+          background-color: $color_green;
+          margin-bottom: 20rpx;
+        }
+        .btn-pay {
+          background-color: $color_green;
+          margin-bottom: 20rpx;
+        }
+        :last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.page-from {
+  padding: 40rpx;
+  .uni-forms-item__content {
+    display: flex;
+    align-items: center;
+    image {
+      width: 200rpx;
+      height: 200rpx;
+    }
+    .from-img {
+      .add-img {
+        color: #d3d3d3;
+        text-align: center;
+        border: 1px solid #eee;
+        height: 5rem;
+        width: 5rem;
+        position: relative;
+        text {
+          font-size: 35px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+  .form-footer {
+    width: 100%;
+    display: flex;
+    .btn-submit {
+      width: 100%;
+      margin-right: 10rpx;
+    }
+    .btn-cancel {
+      width: 100%;
+      background-color: $tn-color-grey;
+    }
+  }
+}
+
+.page-custom {
+  padding: 40rpx;
+  .custom-from {
+    display: flex;
+    flex-direction: column;
+    .custom-from-item {
+      display: flex;
+      margin-bottom: 24rpx;
+      border-bottom: 1px solid $tn-border-solids-color;
+      padding-bottom: 20rpx;
+
+      .label {
+        line-height: 72rpx;
+        color: #606266;
+        font-size: 28rpx;
+        width: 140rpx;
+      }
+      .content {
+        flex: 1;
+        line-height: 72rpx;
+        font-size: 28rpx;
+        display: flex;
+        align-items: center;
+        image {
+          width: 200rpx;
+          height: 200rpx;
+        }
+        uni-input {
+          height: 60rpx;
+          font-size: 28rpx;
+        }
+        uni-textarea {
+          border: 2rpx solid $tn-border-solid-color;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .form-footer {
+    width: 100%;
+    display: flex;
+    .btn-submit {
+      width: 100%;
+      margin-right: 10rpx;
+    }
+    .btn-cancel {
+      width: 100%;
+      background-color: $tn-color-grey;
+    }
+  }
+}
+
+.page-info {
+  padding: 40rpx;
+  .list-wrap {
+    display: flex;
+    flex-direction: column;
+    .list-item {
+      display: flex;
+      font-size: 28rpx;
+      border-bottom: 2rpx solid $border-color-light;
+      padding: 20rpx 0;
+      .label {
+        width: 140rpx;
+      }
+      .value {
+        color: $tn-content-color;
+        image {
+          width: 260rpx;
+          height: 260rpx;
+        }
+      }
+    }
+  }
+}
+
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 6rpx 0;
+  .category-item {
+    margin: 6rpx 0;
+    border: 1px solid $font-color-light;
+    padding: 2rpx 10rpx;
+    color: $font-color-light;
+    margin-right: 10rpx;
+    border-radius: 4rpx;
+    &.active {
+      border: 1px solid $main-color;
+      color: $main-color;
+    }
+  }
+}
+.scroll-tabs {
+  width: 100%;
+  .scroll-view {
+    width: 100%;
+    white-space: nowrap;
+    .category-item {
+      display: inline-flex;
+
+      padding: 8rpx 10rpx;
+      color: $font-color-dark;
+      margin-right: 10rpx;
+      &.active {
+        border-bottom: 2px solid $main-color;
+
+        font-weight: bold;
+      }
+      // &:last-child {
+      //   padding-right: 0;
+      //   margin-right: 0;
+      // }
+    }
+  }
+}
+
+.scroll-category {
+  width: 100%;
+  .scroll-view {
+    width: 100%;
+    white-space: nowrap;
+    .category-item {
+      display: inline-flex;
+      margin: 6rpx 0;
+      border: 1px solid $font-color-light;
+      padding: 2rpx 10rpx;
+      color: $font-color-light;
+      margin-right: 10rpx;
+      border-radius: 4rpx;
+      &.active {
+        border: 1px solid $main-color;
+        color: $main-color;
+      }
+      // &:last-child {
+      //   padding-right: 0;
+      //   margin-right: 0;
+      // }
+    }
+  }
+}
+
+.scroll-wrapper {
+  width: 100%;
+  white-space: nowrap;
+  .scroll-wrapper-item {
+    display: inline-flex;
+  }
+}
+.split-line-10 {
+  height: 20rpx;
+}
+.split-line {
+  height: 30rpx;
+}
+
+/** 详情通用样式 **/
+.diy_detail--new {
+  padding: 10px;
+  .view {
+    border-bottom: 1px solid #ccc;
+    padding: 8px 0;
+    uni-view {
+      display: inline-block;
+    }
+    .diy_title {
+      color: var(--color_primary);
+      margin-right: 5px;
+      vertical-align: top;
+    }
+    .diy_img {
+      img {
+        width: 100%;
+      }
+    }
+    .diy_music {
+      vertical-align: text-top;
+    }
+  }
+  .bar_title {
+    position: relative;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2px;
+    background: var(--color_primary);
+    border-radius: 10px;
+    height: 46px;
+    .title {
+      margin: 0 auto;
+      color: var(--color_white);
+      font-weight: 600;
+    }
+  }
+  .container-fluid-comment--new {
+    margin: 10px 0.6rem;
+    .col {
+      display: flex;
+      flex: auto;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin-left: -10px;
+    }
+    .btn {
+      display: inline-block;
+      border: none;
+      background: var(--color_primary);
+      color: #fff;
+      font-size: 16px !important;
+      padding: 2px 12px !important;
+      border-radius: 20px;
+      line-height: inherit;
+      margin-bottom: 5px;
+      margin-left: 10px;
+      margin-right: 0;
+      &:after {
+        display: none;
+      }
+      .uni-icons {
+        color: #fff !important;
+      }
+    }
+  }
+  .comment_title {
+    margin-top: 10px;
+  }
+}
+
+.album_list {
+  display: flex;
+  flex-wrap: wrap;
+  .album_item {
+    width: 250rpx;
+    height: 250rpx;
+    margin-right: 20rpx;
+    margin-bottom: 20rpx;
+    :nth-child(2n) {
+      margin-right: 0;
+    }
+    .album_image {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

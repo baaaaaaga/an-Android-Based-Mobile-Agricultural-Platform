@@ -1,0 +1,857 @@
+/* 登录 */
+
+/* 登录 */
+.sign_in {
+    /* 界定盒子大小即为边框大小 */
+    box-sizing: border-box;
+    /* 高度为可视化 */
+    height: 100vh;
+    /* 内边框 */
+    padding: .5rem;
+    /* 宽度 */
+    width: 100% !important;
+    /* 背景图片 */
+  background: url(../img/bg.jpg) no-repeat !important;
+    /* 背景图大小 */
+    background-size: 100%  100% !important;
+	 /* */
+
+	position: relative; 
+	
+}
+.login_conter::before {
+    /* 界定盒子大小即为边框大小 */
+    box-sizing: border-box;
+    /* 高度为可视化 */
+    height: 100vh;
+    /* 内边框 */
+    padding: .5rem;
+    /* 宽度 */
+    width: 100% !important;
+    /* 背景图片 */
+  background: url(../img/bg.jpg) no-repeat !important;
+    /* 背景图大小 */
+    background-size: 100%  100% !important;
+	 /* */
+	 filter: blur(3px);
+	 
+	position: absolute; 
+}
+.login_conter .form::before{
+	content: '';
+	background: url(../img/bg.jpg) no-repeat !important;
+	    background-size: 100%  100% !important;
+	height: 600px;
+	width: 500px;
+	position: absolute;
+	top:0;
+	left: -100%;
+	
+	}
+#app .login_conter .form{
+		padding-top: 80px !important;
+		padding: 80px 10px 20px !important;
+	}
+#app .login_conter .form {
+    /* 圆角边框 */
+    border-radius: 0px !important;
+    /* 边框 */
+    border: none ;
+   
+    margin: 150px auto auto 50% !important;
+  
+    /* 宽度 */
+    width: 500px !important;
+    /* 高度 */
+    /* height: 400px !important; */
+	max-width: 500px !important;
+	min-height: 600px !important;
+	/* padding: 30px 0px 0px 0px !important; */
+		position: relative; 
+		overflow: visible !important; 
+		background-color: #fff;
+}
+.sign_in .form{
+	background-color: #fff;
+	width: 700px !important;
+	/* 高度 */
+	/* height: 400px !important; */
+	max-width: 700px !important;
+}
+/* 登录页  登录框 注册框 忘记密码框 顶部标题*/
+
+.sign_in .form h1 {
+    /*文字摆放位置*/
+    text-align: center !important;
+    /* 文字大小 */
+    font-size: 29px !important;
+   font-weight: 600 !important;
+    /* 字体倾斜 */
+    /* font-style:oblique; */
+    /* 下划线 */
+    /* text-decoration:underline; */
+    /* 下划线颜色 */
+    /* text-decoration-color: #00a4ff; */
+    /* 文字颜色 */
+    color: #234f06;
+    /* 外边距 */
+   margin: 20px 0px;
+  }
+   
+#app .sign_in .form  .el-form-item,.geetest_box{
+	display: flex;
+	flex-direction: column;
+	/* margin-left: 50px; */
+}
+
+
+/* 登录页  登录框 注册框 忘记密码框 input框左侧label字体样式*/
+
+.sign_in .form label,.sign_in .geetest_box_title {
+    /*文字摆放位置*/
+    /* text-align: left !important; */
+    /* 文字大小 */
+    font-size: 17px !important;
+    /* font-weight: 600; */
+    /* 字体倾斜 */
+    /* font-style:oblique; */
+    /* 下划线 */
+    /* text-decoration:underline; */
+    /* 下划线颜色 */
+    /* text-decoration-color: #00a4ff; */
+    /* 文字颜色 */
+    color:#0d6e1f;
+	width: 100px !important;
+	margin-left: 50px;
+}
+.sign_in .geetest_box_title {
+	text-align: center !important;
+	margin-left: 48px !important;
+}
+.sign_in .form label::after,.sign_in .geetest_box_title::after{
+	content: '：';
+}
+.sign_in .geetest_box .test-v{
+	width: 350px;
+	    margin-left: 61px;
+}
+.sign_in .form label::before,.sign_in .geetest_box_title::before{
+	display: none;
+}
+
+/* 登录页  登录框 注册框 忘记密码框 input框样式*/
+
+.sign_in .form input {
+    /* 圆角边框 */
+ border-radius: 0px !important;
+/*  border: 1px solid #ff5722 ; */
+    /* 边框阴影 */
+    /* box-shadow: 0px 0px 20px 10px #ccc; */
+    /* 外边距 */
+    /* margin: 10px 10px 10px 10px; */
+    /* 内边距 */
+    /* padding: 10px 10px 10px 10px; */
+    /* 内部字体颜色 */
+    /* color: #edf798; */
+    /* 盒子透明度 */
+    /* opacity: 0.8; */
+    /* 背景颜色 */
+    background-color:#eafeee !important;
+    /* 宽度 */
+    /* width: 100px; */
+    /* 高度 */
+    /* height: 100x; */
+    /*文字摆放位置*/
+    /* text-align: center !important; */
+	border: 1px solid #cdffde;
+	font-size: 14px;
+}
+/* 登录页按钮 */
+.login_conter .btns{
+	display: flex;
+	    flex-direction:column;
+	    flex-wrap: wrap;
+	    align-items: center;
+	    justify-content: center;
+}
+.sign_in .lg_login{
+	width:80% !important;
+	margin: 10px auto;
+}
+
+
+/* 登录 按钮 */
+.sign_in .lg_login{
+	/* 按钮内字体颜色 */
+		  color: #fff !important;
+		  /* 字体大小 */
+		  font-size: 16px !important;
+		  /* 字体加粗 */
+		  font-weight: 400 !important;
+		  /* 圆角 */
+		  border-radius: 10px !important;
+		  /* 背景图 */
+		background-image: none !important;
+		  /* 背景图大小 */
+		 background-size: 100% 100% !important;
+		  /* 边框 */
+		  border: 0px solid #DCDFE6 !important;
+		  /* 背景颜色 */
+		 background-color: #59bf82 !important;
+		/* margin-left: 25px; */
+}
+/* 登录页  登录框内忘记密码字体样式*/
+
+/* 注册按钮*/
+.sign_in  .lg_register{
+	border: none;
+	color: #00a4ff;
+	font-size: 14px;
+	/* padding-bottom: 1px; */
+/* 	margin-left: -80px !important; */
+	margin-top: -10px !important;
+	/* padding: 0px !important;
+	width: auto !important ; */
+}
+.sign_in  .lg_register::before{
+	content: '没有账号？现在';
+	color: #848789;
+	font-size: 14px;
+	
+	
+}
+/* 忘记密码 */
+.sign_in  .lg_forgot{
+	border: none;
+	color:  #848789;
+	font-size: 14px;
+	/* padding-bottom: 1px; */
+/* 	margin-right: -100px !important; */
+	margin-top: -10px !important;
+	/* padding: 0px !important;
+	width: auto !important ; */
+}
+.sign_in  .rs_register,.sign_in .fg_submit{
+	background-color: #59bf82 !important;
+	border: none !important;
+}
+/* 需要在login.vue文件夹下的 ‘忘记密码’位置加上 class="forgetthepassword" 类名 方可生效 */
+.register_wrap .float-right,.forgot_wrap .float-right{
+	float: none;
+	position: relative;
+	left: 35%;
+}
+/* //////////////////// */
+.sign_in .countermand {
+   color: #f06868 !important;
+     /* 字体大小 */
+     font-size: 18px !important;
+     /* 字体加粗 */
+    font-weight: 400 !important;
+     /* 圆角 */
+ /*    border-radius: 10px !important; */
+   
+    /* border: 1px solid #DCDFE6 !important; */
+     /* 背景颜色 */
+   background-color: #eeeeee !important;
+	
+}
+.sign_in .btns:last-child{
+	color: #16c215;
+}
+/* 登录页忘记密码 */
+.el-breadcrumb .el-breadcrumb__inner span{
+	color: #16c215 !important ;
+}
+.forgot_wrap .btns:last-child{
+    /* 文字大小 */
+    font-size: 16px !important;
+    /* 字体加粗 */
+    font-weight: 400 !important;
+    /* 下划线 */
+   
+    /* 文字颜色 */
+    color:#222;
+	/* background-color: #C7B198; */
+	height: 38px;
+	     width: 160px;
+	    margin-left: 56px;
+	line-height: 38px;
+	margin-top: 2px;
+	border-radius: 10px;
+}
+
+/* 忘记密码页发送验证码按钮 */
+
+.el-input-group__append, .el-input-group__prepend{
+    /* 背景颜色 */
+   /* background-color: #80d6ff !important; */
+    /* 边框 */
+    border: 0px solid #DCDFE6 !important;
+}
+
+/* 导航栏 */
+
+.timess{
+	display: none;
+}
+.action_left{
+	background-color: #baf9e6;
+	height: 80px;
+	line-height: 80px !important;
+	display: none !important;
+}
+
+.action_center{
+	background-color: #baf9e6;
+	font-size: 20px;
+/* font-family: "DM Sans",sans-serif; */
+    font-style: normal;
+    font-weight: 600;
+   /* font-size: 18px; */
+    color: #1C1D1D;
+	line-height: 80px !important;
+}
+.action_left .btn_menu .el-icon-menu{
+	color:  #a993dc;
+	display: none;
+}
+.action_right{
+	background-color: #baf9e6;
+	line-height: 80px;
+	height: 80px !important;
+}
+.bg{
+	background-color: #fff!important;
+}
+
+/* 左侧导航栏 */
+/* --------------------------------------------------------------- */
+main article {
+  /*  transform: translateY(100px); */
+}
+#app .page .side {
+    background-color: #fff !important;
+    /* border-right: 2px solid #16c215; */
+ /*   width: 100%; */
+   /* position: absolute; */
+   /* display: flex; */
+    /* margin-top: 50px; */
+ /*   flex-direction: row; */
+    flex-wrap: nowrap;
+	z-index: 99;
+	/*   height: 80px; */
+/* 	overflow-y:visible; */
+		/* border-bottom: 1px solid #fcca16; */
+	}
+
+#app .page .side .el-submenu{
+	
+	width: auto;
+	/* padding: 5px; */
+
+}
+
+.el-submenu__title{
+	/* padding: 5px !important; */
+	font-size: 15px;
+	height: 60px !important;
+	line-height: 60px !important;
+		background-color: #59bf82 !important;
+		text-align: center;
+}
+#app .page .side .el-submenu i{
+	display: none;}
+/* 右侧内容区 */
+/* 导航栏子类外框背景色 */
+.is-opened .el-submenu__title{
+	width: auto;
+	font-size: 15px;
+	text-align: center;
+		background-color: #356b38 !important;
+}
+
+#app .page .side .el-submenu .el-menu {
+	  background-color: #fff !important;
+	  z-index: 9999999999;
+}
+/* 导航栏首页盒子 */
+#app .page .side .el-menu-item{
+	border-radius: 0px  !important;
+background-color:#fff!important;
+color: #333 !important;
+border-bottom: 1px solid #59bf82;
+text-align: center;
+	}
+
+#app .page article{
+    /* 背景颜色 */
+    background-color: #ffffff;
+}
+
+#app .page article .table_wrap{
+	background-color: #fff !important;
+}
+/* 左侧导航栏 选中后的样式 样式  */
+
+#app .page .side .li {
+    /* 背景颜色 */
+    background-color: #80d6ff !important;
+}
+
+/* 左侧导航栏 选中后文字及图标样式 样式  */
+
+#app .page .side .el-icon-s-home {
+   
+}
+/* 左侧导航栏颜色 */
+#app .page .side {
+    /* 背景颜色 */
+    background-color: #fff !important;
+    /* 边框 */
+    /* border-right: 2px solid #16c215; */
+}
+
+
+
+ 
+
+/* 左侧导航栏选中文字样式 */
+
+
+
+#app  .side .el-menu-item.active,#app  .side .el-menu-item.is-active {
+ display: block;
+ 	background-color:#baf9e6 !important;
+ /* 	color:  #80d6ff  !important; */
+ 	font-size: 1rem;
+ 	/* font-weight: 600; */
+  
+}
+#app  .side .el-menu-item.sactive {
+border-radius: 0px !important;
+    background-color: #fff!important;
+    color: #333 !important;
+    border-bottom: 1px solid #59bf82;
+	}
+
+.side>.el-menu-item:nth-child(1){
+	height: 60px;
+	margin-top: 5px;
+	
+}
+
+/* 左侧导航栏 首页图标 样式  */
+#app .page .side .el-icon-s-home {
+
+   color: #f0ece2 !important;
+   /* display: none; */
+}
+
+
+/* 左侧导航栏 未选中时图标样式  样式  */
+#app .page .side i {
+    
+    color: #f1e2aa;
+	/* display: none; */
+}
+/* 左侧导航栏缩进 菜单外盒子 */
+.el-menu--vertical {
+    /* 背景颜色 */
+    background-color: #fff !important;
+}
+/* 左侧导航栏缩进 菜单内盒子 */
+.el-menu--vertical .el-menu{
+background-color: #fff !important;	
+
+
+}
+
+/* 左侧导航栏缩进 菜单单条盒子 */
+.el-menu--vertical .el-menu-item{
+	/* 背景颜色 */
+	background-color: #fff  !important;
+	   /* 下边框 */
+	/*   border-bottom: 3px solid #f06868; */
+	   /* 圆角 */
+	 /* border-radius: 1.25rem; */
+	   /* 下外边距 */
+	color: #333333 !important;
+	border-radius: 10px !important;
+	 /* 下外边距 */
+	margin: 5px;
+	border: 1px dashed #a993dc !important;
+	  /* 边框 */
+}
+/* 鼠标点击以后样式 */
+.el-menu--vertical .el-menu-item:hover{
+  background-color: #a993dc !important;
+  color:  #FFFFFF  !important;
+  font-size: 1.25rem;
+}
+
+.item-ltb{
+	display: none;
+}
+
+/*  顶部栏 样式 */
+
+#app header {
+    /* 背景颜色 */
+    background-color:#baf9e6 !important;
+    /* 盒子透明度 */
+/*    border: 1px solid #222 */
+}
+
+
+/*  顶部栏内 右边头像样式 */
+
+#app header .action_right .el-dropdown .el-avatar {
+    /* 圆角边框 */
+    border-radius: 20% !important;
+	margin-top: 30px !important;
+	color: #000;
+   
+}
+
+/* 头像下选项框 */
+
+.el-dropdown-menu__item--divided:before {
+  background-color: #59bf82 !important;
+    z-index: 999;
+}
+
+.el-dropdown-menu__item--divided{
+	/* border: 1px solid #000 !important; */
+	background-color: #59bf82 !important;
+}
+.el-dropdown-menu__item {
+  color: #222 !important;
+    z-index: 999;
+}
+/* 个人信息和忘记密码
+ */
+#user_info,#user_password{
+	width: 60%;
+	margin: 10px auto;
+}
+
+#user_info .el-form .row_e,#user_password .el-form .row_e{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.text-center{
+	margin-bottom: 10px;
+}
+#user_password .el_form_btn{
+	width: 100px;
+	margin-left: 2px;
+}
+#user_password  .el-button--primary{
+	background-color: #16c215 !important;
+	border: none;
+}
+#user_password  .el-button--default{
+	    background-color: #59bf82 !important;
+			border: none;
+}
+/*----------------------------------------------------------------------  */
+.el-form--label-right{
+	background-color: #fff;
+	margin-bottom: 10px;
+}
+/* 列表页  查询字段名称 文字样式*/
+.el-form-item__label{
+	/* 颜色 */
+	/* color: #303841 !important; */
+	/* 字体大小 */
+	font-size: 16px !important;
+	width: 120px !important;
+	text-align: center !important;
+	padding-right: 5px  !important;
+	}
+.el-form-item__label::after{
+	/* content: '：'; */
+}
+.form.el-form.form.p_4.el-form--label-right {
+	display: flex;
+	    flex-direction: column;
+	    flex-wrap: wrap;
+		position: relative;
+		/* margin-bottom: 150px; */
+		border: 1px solid #d6d4d4;
+} 
+  .el-form-item__content{
+	 display: flex;
+	 flex-direction: row;
+	 
+  }
+  .el_form_btn_warp{
+	 position: relative;
+	 left: 45%;
+	 	 
+  }
+  .el_form_btn_warp  .el-form-item__content{
+	  margin-left: 0px !important;
+  }
+  .search_btn_wrap_1 {
+	  /* position: absolute;
+	   top: 80px; */
+  }
+  #app .el-col-8{
+  	width: 80%;
+  	margin: 10px auto;
+  	float: none;
+  }
+  #root_index .container-fluid .card {
+
+      border-radius: 20px !important;
+      background-color: #fff !important;
+  
+     
+  }
+
+	.el-main .el-image{
+	 width: 100%;
+	 height: 100%;
+ }
+ .el-avatar.el-avatar--circle img{
+	 width: 100%;
+	 height: 100%;
+ }
+	.table_wrap .btns  .el-button {
+		display: inline-block;
+		border-radius: 0px;
+		background-color: #bbb6b4;
+		border: none;color: #ffff;
+		text-align: center;
+		font-size: 16px;
+		font-weight: 400;
+		padding: 10px;
+		width: 100px;
+		transition: all 0.5s;
+		cursor: pointer;margin: 5px;
+		vertical-align: middle;}
+	.table_wrap .btns .el-button span 
+	{
+		cursor: pointer;
+		display: inline-block;
+		position: relative;
+		transition: 0.5s;}
+		.table_wrap .btns  .el-button span::after {
+			content: ">";
+			position: absolute;opacity: 0;top: 0;right: -20px;transition: 0.5s;}
+	.table_wrap .btns  .el-button:hover span {padding-right: 30px;}
+	.table_wrap .btns  .el-button:hover span::after {opacity: 1;right: 0;}
+	.table_wrap .btns  .el-button--success{
+		width: 200px ;
+	}
+ #app .table_wrap .search_btn_find, #app .table_wrap .search_btn_find:hover{
+	background-color: #86cbae !important;
+	color: #ffff;
+	border: none;
+	margin: 5px;
+}
+.table_wrap .search_btn_reset,.table_wrap .search_btn_reset:hover{
+	background-color: #6b929d !important;
+	color: #ffff;
+	border: none;
+}
+
+ #app .table_wrap .search_btn_add, #app .table_wrap .search_btn_add:hover{
+ 	background-color: #16c215 !important;
+ 	color: #ffff;
+ 	border: none;
+ }
+ .table_wrap .search_btn_del,.table_wrap .search_btn_del:hover,.el-button--danger{
+ 	background-color: #59bf82 !important;
+ 	color: #ffff;
+ 	border: none;
+ }
+ .el-upload--text .el-button,.el-upload--text .el-button:hover{
+	 background-color:   #7bb7a3 !important;
+	 color: #ffff !important;
+	 border: none;
+ }
+
+ .is-plain.el-button--success{
+	 background-color: #16c215 !important;
+	 color: #ffff !important;
+	 border: none;
+ }
+ .el-button.el-button--small.is-plain{
+	background-color: #59bf82;
+	color: #ffff;
+	border: none; 
+ }
+ .el-button.is-plain.el-button--primary{
+	 margin-left: 2px;
+	 background-color:#2f7c0e ;
+	 color: #ffff;
+	 border: none;
+ }
+ .el-form-item--feedback .el-button--primary,.el-form-item__content .el-button--primary{
+	 background-color: #16c215 !important;
+	 color: #ffff !important;
+	 border: none;
+	
+
+ }
+ 
+.el-form-item--feedback .el-button--default,.el-form-item__content .el-button--default{
+	 background-color: #59bf82 !important;
+	 color: #ffff !important;
+	 border: none;
+	margin-right: 5px !important;
+ }
+ 
+
+  .search_btn_wrap_1 {
+	  width: 100% !important;
+  }
+  .geetest_box .el-input{
+	  margin-left: 0px !important;
+  }
+  .search_btn_wrap_1,.search_btn_1{
+	  display: flex;
+	  flex-direction: row;
+	      flex-wrap: wrap;
+	      justify-content: center;
+  }
+  .search_btn_1{
+	  width: 100% !important;
+  }
+  .search_btn_reset,.search_btn_print,.search_btn_derive {
+	  margin-right: 5px  !important;
+  }
+  .el-button--success {
+  	  margin-left: 10px  !important;
+	  margin-right: 10px  !important;
+  }
+  .el_form_editor_warp {
+	  padding-bottom: 50px !important;
+	  margin-top: 50px !important;
+	  margin-bottom: 50px !important;
+	  overflow: visible !important; 
+  }
+  .cell .e-button{
+	
+	  background-color: #59bf82 !important;
+	  color: #fff !important;
+	  margin: 1px auto !important;
+  }
+   .cell{
+	
+	       display: flex;
+	       flex-direction: column;
+	       flex-wrap: wrap;
+	       align-items: center;
+		   justify-content: center;
+   }
+   .el-table__header th{
+	   text-align: center !important;
+   }
+   .edit_wrap{
+	   width:80%;
+	   border: 1px solid #eee;
+	   background-color: #ddf1ec !important;
+   }
+      .edit_wrap .el-upload-dragger{
+	   width: auto !important;
+	   overflow: visible !important;
+   }
+   .edit_wrap .el_form_btn_warp{
+	   width: 57% !important;
+   }
+  .edit_wrap .el_form_btn_warp .el_form_btn{
+	  width: 80px;
+	  margin-left: 5px;
+  }
+   .edit_wrap .el_form_btn_warp .el_form_btn button{
+	width: 80px;}
+	.goods_type  .el_form_btn_warp .el-form-item__content{
+		width: 150px;
+	}
+	.cell .view_a {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.cell .view_a .e-button,.cell .view_a .el-button{
+		text-align: center;
+	}
+	.face-login{
+		position: absolute;
+	}
+	.hide-avatar{
+		display: block !important;
+		width: 100px;
+		height: 100px ;
+		margin: 0px auto;
+	}
+		.hide-avatar img{
+			width: 100% ;
+			height: 100% !important;
+			border-radius: 100% !important;
+			border: 2px solid #356b38;
+		}
+		.breadcrumb_box{
+			display: none !important;
+		}
+		.el-dropdown{
+			color: #333 !important;
+		}
+		.table_wrap .search_btn_1{
+			display: flex;
+			    flex-direction: row;
+			    justify-content: flex-start;
+		}
+		.el-main.edit_wrap{
+			overflow: hidden !important;
+		}
+		.form .el-input{
+			width: 100% !important;
+		}
+		.view_a a.e-button{
+			padding: 5px !important;
+			    border-radius: 3px !important;
+		}
+.el-dialog__body .el-radio-group{
+	margin-top: 14px;
+}
+.table_wrap .el-button.el-button--default{
+	background: #86cbae !important;
+	margin: 5px !important;
+	color: #fff;
+}
+.table_wrap .el-button.el-button--default:hover{
+	background: #59bf82 !important;
+}
+.el-form-item__content:has(.img_multiple){
+	flex-direction: column !important;
+}
+.auth .el-switch {
+	margin-top: 10px !important;
+}
+.ql-toolbar.ql-snow + .ql-container.ql-snow{
+	height: 450px;
+}
+.edit_wrap .el-switch{
+	margin-top: 10px;
+}
+.el-date-editor .el-range-separator{
+	width: 10% !important;
+}
+.el-upload--text .el-button, .el-upload--text .el-button:hover{
+	margin: 5px;
+}
+.export-excel-wrapper .el-button--success{
+	margin: 5px;
+}
+.table_wrap .search_btn_del, .table_wrap .search_btn_del:hover, .el-button--danger{
+	margin: 5px !important;
+}
+.edit_wrap .el_form_item_warp{
+	min-height: 64px;
+}
