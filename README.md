@@ -23,5 +23,5 @@ This repository contains only the core source code (approx. 90MB). Large static 
 
 * **JDK:** 17+
 * **Redis:** 运行实例
-* **[您的数据库]:** 运行实例
+* **[Mysql]:** 运行实例
 * **Maven / Node.js & npm/yarn / Android Studio**
